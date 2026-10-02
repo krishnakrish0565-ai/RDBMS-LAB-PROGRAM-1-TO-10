@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
+DROP DATABASE IF EXISTS leelakrishnan;
+CREATE DATABASE leelakrishnan;
+USE leelakrishnan;
 
 CREATE TABLE Student(
     StudentID INT(5) PRIMARY KEY,
@@ -11,15 +11,6 @@ CREATE TABLE Student(
     Email VARCHAR(30),
     PhoneNumber BIGINT
 );
-
-INSERT INTO Student(StudentID,StudentName,Gender,DepartmentID)
-VALUES
-(1001,'Arun','Male',101),
-(1002,'Divya','Female',102),
-(1003,'Karthik','Male',101);
-
--- Update Karthik's DepartmentID
-
--- Delete StudentID 1002
-
--- Display all records
+create database college; use leelakrishnan;
+create table Student( studentID int(5) primary key,studentName varchar(20) not null, gender varchar(10) not null,departmentID int(5));
+insert into Student values(1001,"Arun","Male",101), (1002,"Divya","Female",102),(1003,"Karthik","Male",101); select * from Student;
